@@ -29,7 +29,7 @@ function sendMessageToTelegram() {
     }
 }
 
-chrome.extension.onMessage.addListener(function(message, sender, sendResponse) {
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     if (message && message.type == 'playSound') {
 		playSound();
 		sendMessageToTelegram();
