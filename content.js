@@ -57,7 +57,6 @@ function macrostop() {
 }
 
 if (document.URL.substring(0, dsturl1.length) == dsturl1) {
-
 	$(document).ready(function() {
 
 		var coachSelected = JSON.parse(sessionStorage.getItem('coachSelected'));
@@ -85,12 +84,12 @@ if (document.URL.substring(0, dsturl1.length) == dsturl1) {
 		}
 
 		$("<style>")
-    .prop("type", "text/css")
-    .html("\
-    .search-form form .button input, .search-form form .button a img{\
-    	vertical-align: middle;\
-    }")
-    .appendTo("body");
+		.prop("type", "text/css")
+		.html("\
+		.search-form form .button input, .search-form form .button a img{\
+			vertical-align: middle;\
+		}")
+		.appendTo("body");
 
 		// Inserts the macro button into the table.
 		if ($("#search-list").length != 0) {
